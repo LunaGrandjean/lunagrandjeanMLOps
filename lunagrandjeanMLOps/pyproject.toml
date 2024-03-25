@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "lunagrandjeanMLOps"
+version = "0.1.0"
+description = "Project description."
+authors = ["Firstname Lastname <mail>"]
+
+[tool.poetry.dependencies] # Direct prod dependencies
+python = ">=3.11,<3.12"
+streamlit = "~1"
+pandas = "~2"
+typing-extensions = "^4.10.0"
+matplotlib = "^3.8.3"
+seaborn = "^0.13.2"
+prometheus-client = "^0.20.0"
+
+[tool.poetry.dev-dependencies] # Develop dependencies
+coverage = "~7" # Allow to know the part of code covered
+black = "~23" # Code formatting
+isort = "~5" # Import sort
+mypy = "~1" # Type checking
+pytest = "~7" # For unit tests
+vulture = "~2" # Check dead code
+git-cliff = "~1" # Git commit formatting
